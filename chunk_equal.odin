@@ -2,7 +2,6 @@
 package aseprite_file_handler
 
 import "core:fmt"
-import "core:log"
 import "core:slice"
 import "core:reflect"
 

@@ -3,9 +3,6 @@ package aseprite_file_handler
 import "base:runtime"
 import "core:io"
 import "core:log"
-import "core:fmt"
-import "core:strings"
-import "core:math/fixed"
 import "core:encoding/endian"
 
 read_bool :: proc(r: io.Reader, n: ^int) -> (data: bool, err: Read_Error) {

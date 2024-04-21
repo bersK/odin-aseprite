@@ -1,6 +1,5 @@
 package aseprite_file_handler
 
-import "core:log"
 import "core:reflect"
 import "core:encoding/endian"
 
@@ -242,7 +241,6 @@ document_equal :: proc(x, y: Document) -> (a: any, b: any, c: typeid, eq: bool) 
         if x.header.size == y.header.size {
             return x.header, y.header, typeid_of(Document), false
         }
-        //log.warn("File sizes are differant:", x.header.size, y.header.size)
     }
     if len(x.frames) != len(y.frames) {
         return len(x.frames), len(y.frames), typeid_of(Document), false
